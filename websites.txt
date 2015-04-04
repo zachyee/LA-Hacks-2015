@@ -1,0 +1,9 @@
+Useful websites
+
+bootstrap:
+http://getbootstrap.com/getting-started/#download
+Download non-source code
+Make HTML files
+
+php basics:
+http://www.webmonkey.com/2010/02/php_tutorial_for_beginners/
