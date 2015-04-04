@@ -1,5 +1,5 @@
-var bookTitle = document.getElementById("bookTitle");
+var bookTitle = document.getElementById("searchTitle");
 
-var getBookTitle = function() {
+var getMatchingTitles = function() {
 	alert("Book title: " + bookTitle.value);
 };

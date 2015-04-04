@@ -7,6 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>LA Hacks Nonsense...</title>
 
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/zach.css">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="practiceCSS.css">
@@ -18,6 +21,7 @@
     <![endif]-->
   </head>
   <body>
+<<<<<<< HEAD
     <br>
     <br>
     <br>
@@ -48,8 +52,33 @@
       
       <br></div>
 
+=======
+    <h1>Hello, world!</h1>
+    <h2>WHY DOESN'T THE FUCKING INTERNET WORK?!?!</h2>
+    <h5>Oh. It actually works now. jk lol.
+    <h2>What a beautiful day. I'm so happy :)</h2>
 
-    <!-- Beginning of my Javascript scripts -->
+    <form name="searchForm" id="searchForm" action="javascript:displayMatching();">
+        Book title:<br>
+        <input type="text" name="searchTitle" id="searchTitle" />
+        <br>
+       <input id="searchButton" type="submit" name="searchButton" value="Search"/>
+    </form>
+    <form method="post" action="/" id="addForm">
+        Add Review:<br>
+        <p>Author: <input type="text" name="author" id="author" /></p>
+        <p>Title: <input type="text" name="addTitle" id="addTitle" /></p>
+        <p>Reviewer: <input type="text" name="reviewer" id="reviewer" /></p>
+        <p>Review: </p><textarea name="review" id="review" rows="10" cols="50">Enter review here.</textarea>
+        <br>
+        <input id="reviewButton" type="submit" name="reviewButton" value="Submit Review" />
+    </form>
+>>>>>>> origin/master
+
+    <p id="displayMatches">Default text</p>
+
+    <!-- Beginning of my Javascript scripts --> 
+    <script src="js/reviewServer.js"></script>
     <script src="js/bookTitle.js"></script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
