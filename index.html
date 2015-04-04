@@ -7,6 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>LA Hacks Nonsense...</title>
 
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/zach.css">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,11 +27,20 @@
     <p id="displayTitle"></p>
     <h2>What a beautiful day. I'm so happy :)</h2>
 
-    <form action="javascript:getMatchingTitles();">
+    <form method="get" action="javascript:getMatchingTitles();">
         Book title:<br>
-        <input type="text" name="bookTitle" id="bookTitle">
+        <input type="text" name="searchTitle" id="searchTitle">
         <br>
-       <input id="button" type="submit" name="button" value="Submission"/>
+       <input id="searchButton" type="submit" name="searchButton" value="Search"/>
+    </form>
+    <form method="post" action="/" id="addForm">
+        Add Review:<br>
+        <p>Author: <input type="text" name="author" id="author" /></p>
+        <p>Title: <input type="text" name="addTitle" id="addTitle" /></p>
+        <p>Reviewer: <input type="text" name="reviewer" id="reviewer" /></p>
+        <p>Review: </p><textarea name="review" id="review" rows="10" cols="50">Enter review here.</textarea>
+        <br>
+        <input id="reviewButton" type="submit" name="reviewButton" value="Submit Review" />
     </form>
 
     <!-- Beginning of my Javascript scripts -->
