@@ -10,3 +10,5 @@ http://www.webmonkey.com/2010/02/php_tutorial_for_beginners/
 
 node beginner:
 http://www.nodebeginner.org/
+Node needs to have the right path:
+export PATH=$PATH:C:\\Program\ Files\\nodejs
