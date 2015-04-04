@@ -1,12 +1,12 @@
 // Review constructor
 
-function review(title, author, reviewer, paragraphs) {
+function review(title, author, reviewer, review) {
 	this.title = title;
 	this.author = author;
 	this.reviewer = reviewer;
-	this.paragraphs = paragraphs;
+	this.review = review;
 	this.totalReview = title + "\nWritten By " + author + 
-		"\nReviewed By " + reviewer + "\nReview: " + paragraphs + "\n\n";
+		"\nReviewed By " + reviewer + "\nReview: " + review + "\n\n";
 };
 
 var allReviews = new Array();
@@ -32,7 +32,11 @@ var giveMatchingReviews = function(title) {
 	var matchingReviews = "";
 	for(i = 0; i < allReviews.length; i++) {
 		if(allReviews[i].title == title) {
-			matchingReviews += (allReviews[i].totalReview + "<br><br>");
+			if(matchingReviews == "") {
+				matchingReviews += (title + " by " + allReviews[i].author + ":<br><br>");
+			}
+			matchingReviews += ("Reviewer: " + allReviews[i].reviewer + "<br>"
+				+ "Review: " + allReviews[i].review + "<br><br>");
 		}
 	}
 	return matchingReviews;
