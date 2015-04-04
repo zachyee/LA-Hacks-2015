@@ -32,7 +32,7 @@ var giveMatchingReviews = function(title) {
 	var matchingReviews = "";
 	for(i = 0; i < allReviews.length; i++) {
 		if(allReviews[i].title == title) {
-			matchingReviews += allReviews[i].totalReview;
+			matchingReviews += (allReviews[i].totalReview + "<br><br>");
 		}
 	}
 	return matchingReviews;
