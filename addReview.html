@@ -7,9 +7,14 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>LA Hacks Nonsense...</title>
 
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="practiceCSS.css">
+
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,33 +26,19 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!--<div id="banner">
-    </div>-->
-
-    <div class="css-shapes-preview"><h1 id="pageName">Urban Classics</h1>   
+    <div class="css-shapes-preview2"><h1 id="pageName">Urban Classics</h1>   
       <br>
       <br>
-      <form action="javascript:getBookTitle();">
-        Search for a Book: 
-        <input type="text" name="bookTitle" id="bookTitle">
-        <input id="button" type="submit" name="button" value="Submission"/>
-      </form>
-      <br>
-      <br>
-      
-      <form action="javascript:newReview();">
-        <a href="addReview.html">
-        <input id="button2" type="button" name="button2" value="Add a New Review"/>
-        </a>
-      </form>
-      
-      <br></div>
-
+    <form method="post" action="/" id="addForm">
+        Add Review:<br>
+        <p>Author: <input type="text" name="author" id="author" /></p>
+        <p>Title: <input type="text" name="addTitle" id="addTitle" /></p>
+        <p>Reviewer: <input type="text" name="reviewer" id="reviewer" /></p>
+        <p>Review: </p><textarea name="review" id="review" rows="10" cols="50">Enter review here.</textarea>
+        <br>
+        <input id="reviewButton" type="submit" name="reviewButton" value="Submit Review" />
+    </form>
+    </div>
 
     <!-- Beginning of my Javascript scripts -->
     <script src="js/bookTitle.js"></script>
