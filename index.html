@@ -35,11 +35,12 @@
     <div class="css-shapes-preview"><h1 id="pageName">Urban Classics</h1>   
       <br>
       <br>
-      <form action="javascript:getBookTitle();">
-        Search for a Book: 
-        <input type="text" name="bookTitle" id="bookTitle">
-        <input id="button" type="submit" name="button" value="Submission"/>
-      </form>
+    <form name="searchForm" id="searchForm" action="javascript:displayMatching();">
+        Book title:<br>
+        <input type="text" name="searchTitle" id="searchTitle" />
+        <br>
+       <input id="searchButton" type="submit" name="searchButton" value="Search"/>
+    </form>
       <br>
       <br>
       
@@ -51,7 +52,10 @@
       
       <br></div>
 
-    <p id="displayMatches">Default text</p>
+    <div id="summary">
+      <p>Summaries:</p>
+      <p id="displayMatches">lksjlkasj</p>
+    </div>
 
     <!-- Beginning of my Javascript scripts --> 
     <script src="js/reviewServer.js"></script>
