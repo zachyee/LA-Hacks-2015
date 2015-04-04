@@ -7,3 +7,6 @@ Make HTML files
 
 php basics:
 http://www.webmonkey.com/2010/02/php_tutorial_for_beginners/
+
+node beginner:
+http://www.nodebeginner.org/
