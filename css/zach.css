@@ -1,3 +1,11 @@
+.random {
+	color: blue;
+}
+
 #addForm {
 	margin-top: 5%;
+}
+
+#displayMatches {
+	color: white;
 }
